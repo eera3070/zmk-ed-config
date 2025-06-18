@@ -10,23 +10,14 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+
+    /* ---------- Unicode‑Map ---------- */
     unicode_map {
         compatible = "zmk,unicode-map";
-
-        map = <
-            0x00E4  // ä
-            0x00C4  // Ä
-            0x00F6  // ö
-            0x00D6  // Ö
-            0x00FC  // ü
-            0x00DC  // Ü
-            0x00DF  // ß
-        >;
+        /* ä  Ä  ö  Ö  ü  Ü  ß */
+        map = < 0x00E4 0x00C4 0x00F6 0x00D6 0x00FC 0x00DC 0x00DF >;
     };
-};
 
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
