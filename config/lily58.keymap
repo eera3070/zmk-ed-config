@@ -12,14 +12,15 @@
 / {
 
     /* ---------- Unicode‑Map ---------- */
+    /* ä  Ä  ö  Ö  ü  Ü  ß */
     unicode_map {
         compatible = "zmk,unicode-map";
-        /* ä  Ä  ö  Ö  ü  Ü  ß */
         map = < 0x00E4 0x00C4 0x00F6 0x00D6 0x00FC 0x00DC 0x00DF >;
     };
 
     uc: uc {
         compatible = "zmk,behavior-unicode";
+        #binding-cells = <1>;
     };
 
     keymap {
